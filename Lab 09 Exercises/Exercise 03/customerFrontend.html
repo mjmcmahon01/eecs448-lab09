@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="style.css" 
+            rel="stylesheet" 
+            type="text/css"/>
+
+    <script type="text/javascript" src="formChecker.js"> 
+    </script>
+</head>
+
+<body>
+
+<div class="header">
+  <h1>Welcome to the pet store!</h1>
+</div>
+
+<div class="leftcolumn">
+  <div class="card">
+    <h2>BIRD</h2>
+    <h5>You can buy a bird.</h5>
+    <h5>Price: $5</h5>
+    <img src = "bird.jpg" id = "bird" height = "120" width = "180"><br><br>
+    <p>This is a normal bird. Don't ask questions.</p>
+  </div>
+
+<div class="leftcolumn">
+  <div class="card">
+    <h2>DOG</h2>
+    <h5>You can buy a dog.</h5>
+    <h5>Price: $10</h5>
+    <img src = "dog.jpg" id = "dog" height = "120" width = "180"><br><br>
+    <p>This is a normal dog. Don't ask questions.</p>
+  </div>
+
+<div class="leftcolumn">
+  <div class="card">
+    <h2>CAT</h2>
+    <h5>You can buy a cat.</h5>
+    <h5>Price: $2</h5>
+    <img src = "cat.jpg" id = "cat" height = "120" width = "180"><br><br>
+    <p>Okay but this one actually is a normal cat.</p>
+  </div>
+
+<div class = "leftcolumn">
+  <div class="card">
+  <h1>Purhcase time!</h1>
+  <p>Buy some pets!</p>
+  <form>
+    <label for="numBirds">How many birds would you like to buy? ($5 per):</label><br>
+    <input type="text" id="numBirds" name="numBirds"><br>
+    <label for="numDogs">How many dogs would you like to buy? ($10 per):</label><br>
+    <input type="text" id="numDogs" name="numDogs"><br>
+    <label for="numCats">How many cats would you like to buy? ($2 per):</label><br>
+    <input type="text" id="numCats" name="numCats"><br>
+  </form>
+  </div>
+
+<div class = "leftcolumn">
+  <div class="card">
+  <p>Please input valid username and password.</p>
+  <form>
+    <label for="Username">Username:</label><br>
+    <input type="text" id="Username" name="Username"><br>
+    <label for="Password">Password:</label><br>
+    <input type="Password" id="Password" name="Password"><br>
+
+    <p>Please choose a shipping option: </p>
+    <input type="radio" id="Free" name="shipping" value="Free">
+    <label for="Free">Free</label><br>
+    <input type="radio" id="$50.00 over night" name="shipping" value="$50.00 over night">
+    <label for="$50.00 over night">$50.00 over night</label><br>
+    <input type="radio" id="$5.00 three day" name="shipping" value="$5.00 three day">
+    <label for="$5.00 three day">$5.00 three day</label><br>
+    <input type="submit" onclick="func()" value="Submit">
+  </form>
+</div>
+
+</body>
+
+
+<div class="footer">
+  <h2>Thank you for shopping at the pet store.</h2>
+</div>
+
+</html>
